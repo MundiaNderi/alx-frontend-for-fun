@@ -1,41 +1,38 @@
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    height: 100%;
     align-items: center;
+    height: 100vh;
 }
 
 .box {
+    flex: 1; /* Ensure all boxes have equal flex proportions */
+    padding: 10px; /* Add padding to create spacing between the boxes */
+    text-align: center;
     color: white;
 }
 
 .box1 {
     background: lime;
-    flex-basis: 5%;
     font-size: 2rem;
 }
 
 .box2 {
     background: lightskyblue;
-    flex-basis: 10%;
     font-size: 7rem;
 }
 
 .box3 {
     background: darkblue;
-    flex-basis: 15%;
     font-size: 12rem;
 }
 
 .box4 {
     background: darkmagenta;
-    flex-basis: 10%;
     font-size: 7rem;
 }
 
 .box5 {
     background: darkorange;
-    flex-basis: 5%;
     font-size: 2rem;
 }
