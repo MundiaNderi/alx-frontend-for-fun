@@ -5,13 +5,14 @@
     height: 100vh;
 }
 
+/* Style for each box */
 .box {
     flex: 1; /* Ensure all boxes have equal flex proportions */
-    padding: 10px; /* Add padding to create spacing between the boxes */
-    text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .box1 {
     background: lime;
     font-size: 2rem;
