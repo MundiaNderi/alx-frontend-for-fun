@@ -1,0 +1,22 @@
+h2 a {
+    color: maroon;
+    text-decoration: none;
+    position: relative;
+}
+
+h2 a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: maroon;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Initially, the underline is not visible */
+    transform-origin:  bottom right;
+    transition: transform 0.3s ease-in-out; /* Apply a transition effect */
+}
+
+h2 a:hover::before{
+    transform: scaleX(1); /* Expand the underline to full width on hover */
+}
