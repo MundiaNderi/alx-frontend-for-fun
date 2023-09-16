@@ -16,5 +16,5 @@ body {
 }
 
 p {
-    @include textColor() ;  // Note that we don't need a semicolon here
+    @include textColor() // Note that we don't need a semicolon here
 }
