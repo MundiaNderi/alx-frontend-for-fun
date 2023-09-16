@@ -4,7 +4,18 @@ The background color #6D6D6D to the HTML tags body and h2
 You must use 2 Sass variables
 */
 
-use '1-color_variable.css';
-
 $text-color: #3D3D3D;
-$background-color: #6D6D6D;
+$bg-color: #6D6D6D;
+
+body {
+    color: $text-color;
+    background-color: $bg-color;
+}
+
+p {
+    color: $text-color;
+}
+
+h2 {
+    background-color: $bg-color;
+}

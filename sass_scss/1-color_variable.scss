@@ -11,10 +11,6 @@ $color: #3D3D3D;
 
 // Apply the text color to body and p elements using the mixin
 
-body {
+body, p {
    @include textColor;
-}
-
-p {
-    @include textColor;  // Note that we don't need a semicolon here
 }
