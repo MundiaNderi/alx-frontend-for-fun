@@ -1,0 +1,20 @@
+/* Assigns the text color #3D3D3D to
+the HTML tags body and p */
+
+
+$color: #3D3D3D;
+
+// Define the mixin to apply the color
+@mixin textColor {
+    color: $color;
+}
+
+// Apply the text color to body and p elements using the mixin
+
+body {
+   @include textColor();
+}
+
+p {
+    @include textColor() ;  // Note that we don't need a semicolon here
+}
