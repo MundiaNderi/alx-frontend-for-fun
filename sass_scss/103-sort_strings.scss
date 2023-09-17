@@ -1,0 +1,9 @@
+/* Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output. */
+@import '103-sort_list';
+
+// Sort the list alphabetically
+$sorted_list: sort($list_to_sort);
+
+@each $name in $sorted_list {
+    @debug $name;
+}
